@@ -1,5 +1,6 @@
 # 8 Puzzle Solver for Image and Number Using A *
 
+[Jan 2021]<br>
 The 8 puzzle, also known as the sliding puzzle or tile puzzle, is a classic puzzle consisting of eight sliding tiles on a 3x3 grid. The tiles are numbered from 1 to 8, with one tile missing. The objective of the puzzle is to rearrange the tiles into their correct order by sliding them horizontally or vertically into the empty space, with the goal of achieving the lowest number of moves possible.<br>
 A* is a popular pathfinding algorithm used to find the shortest path between two points in a graph or a grid. It combines elements of Dijkstra's algorithm and heuristics to find the shortest path quickly and efficiently. The algorithm uses a priority queue to explore the graph by choosing the next best node to expand based on the estimated total cost of the path from the starting node to the destination node. The heuristic function is an essential component of A*. It estimates the cost of the path from a current node to the goal node and uses this value to prioritize the search and expand nodes that are more likely to lead to the goal.
 
