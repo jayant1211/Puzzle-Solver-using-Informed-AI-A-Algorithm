@@ -1,34 +1,64 @@
 # 8 Puzzle Solver for Image and Number Using A *
 
 [Jan 2021]<br>
-The 8 puzzle, also known as the sliding puzzle or tile puzzle, is a classic puzzle consisting of eight sliding tiles on a 3x3 grid. The tiles are numbered from 1 to 8, with one tile missing. The objective of the puzzle is to rearrange the tiles into their correct order by sliding them horizontally or vertically into the empty space, with the goal of achieving the lowest number of moves possible.<br>
-A* is a popular pathfinding algorithm used to find the shortest path between two points in a graph or a grid. It combines elements of Dijkstra's algorithm and heuristics to find the shortest path quickly and efficiently. The algorithm uses a priority queue to explore the graph by choosing the next best node to expand based on the estimated total cost of the path from the starting node to the destination node. The heuristic function is an essential component of A*. It estimates the cost of the path from a current node to the goal node and uses this value to prioritize the search and expand nodes that are more likely to lead to the goal.
+This repository contains an implementation of the A* algorithm applied to solve the classic 8-Puzzle problem. The A* algorithm is an informed search algorithm that intelligently explores the search space by combining the cost to reach the current state and a heuristic estimate of the remaining cost to the goal state.
 
-This project uses A* algo to solve the 8 puzzle, either for number or for an image, choice is prompted after running <i>main.py</i>. If user selects image, we ask path for that image, and we ask jumbled matrix(considering 1 is correct top-left corner of image, 2 is middle in 1st row etc.), which represents the puzzle to solve.
-
-### Requirements
+## Features
 <ul>
-<li> OpenCV
-<li> NumPy
+<li><b>Heuristic-driven Optimization:</b> A* intelligently explores possible solutions by considering both the actual cost and a heuristic estimate.
+
+<li><b>Versatility:</b> Solve the 8-Puzzle problem with either numbers or images, showcasing the adaptability of the AI algorithm.
+
+<li><b>Visual Representation:</b> Visualize the steps taken to solve image-based puzzles, with an option to save the intermediate results.
 </ul>
 
+## Getting Started
 
-### Results
+### Pre-requisites
+<ul>
+  <li> Python 3.x</li>
+  <li> OpenCV </li>
+</ul>
 
-After giving input for puzzled matrix of image:
+### Installation
+<b>1. Clone the repository:</b>
+<br>git clone https://github.com/yourusername/AI-Puzzle-Solver.git
 
-Step 0 - Inital Stage<br>
+<b>2. Navigate to Project Directory:</b>
+<br>cd AI-Puzzle-Solver
 
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/1.JPG" width="50%" height="50%">
+<b>3. Install dependencies</b>
+<br>pip install opencv-python
+<br>pip install numpy
 
-Step 1<br>
+### Usage
+Run the 'main.py' file:
+<be>
+<br>python  main.py
 
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/2.JPG" width="50%" height="50%">
+Follow the on-screen instructions
 
-Step 2<br>
+## A* Algorithm
+The A* algorithm uses a combination of the actual cost to reach a node (g) and a heuristic estimate of the remaining cost to the goal (h). The total cost (f) is given by:
+<br> f(x) = g(x) + h(x)
+<br>In the context of the 8-Puzzle, the heuristic function 'h(x)' calculates the number of misplaced tiles between the current state and the goal state.
 
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/3.JPG" width="50%" height="50%">
+## Results
 
-Result <br>
+#### Step 0 - Inital Stage<br>
 
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/res.JPG" width="50%" height="50%">
+<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/1.JPG" width="75%" height="75%">
+
+#### Step 1<br>
+
+<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/2.JPG" width="75%" height="75%">
+
+#### Step 2<br>
+
+<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/3.JPG" width="75%" height="75%">
+
+<be>
+<br>
+<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/res.JPG" width="75%" height="75%">
+
+
