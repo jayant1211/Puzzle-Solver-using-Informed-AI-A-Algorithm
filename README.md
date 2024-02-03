@@ -1,6 +1,5 @@
-# 8 Puzzle Solver for Image and Number Using A *
+# Puzzle Solver using Informed AI - A* Algorithm
 
-[Jan 2021]<br>
 This repository contains an implementation of the A* algorithm applied to solve the classic 8-Puzzle problem. The A* algorithm is an informed search algorithm that intelligently explores the search space by combining the cost to reach the current state and a heuristic estimate of the remaining cost to the goal state.
 
 ## Features
@@ -22,20 +21,28 @@ This repository contains an implementation of the A* algorithm applied to solve 
 
 ### Installation
 <b>1. Clone the repository:</b>
-<br>git clone https://github.com/yourusername/AI-Puzzle-Solver.git
+```bash
+git clone https://github.com/yourusername/AI-Puzzle-Solver.git
+```
 
 <b>2. Navigate to Project Directory:</b>
 <br>cd AI-Puzzle-Solver
 
 <b>3. Install dependencies</b>
-<br>pip install opencv-python
-<br>pip install numpy
+```bash
+pip install opencv-python
+```
+
+```bash
+pip install numpy
+```
 
 ### Usage
 Run the 'main.py' file:
 <be>
-<br>python  main.py
-
+```bash
+python main.py
+```
 Follow the on-screen instructions
 
 ## A* Algorithm
