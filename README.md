@@ -44,7 +44,7 @@ python main.py
 ```
 Select Between Numbered Sliding Puzzle and Sliding Puzzle from an Image. 
 
-If you chose numbered sliding puzzle, you can input a randomized sequence of number for 8-Puzzle. 
+If you chose a numbered sliding puzzle, you can input a randomized sequence of number for the 8-Puzzle. 
 For eg.
 |      |      |      |
 |------|------|------|
@@ -52,7 +52,7 @@ For eg.
 | _    | 4    | 6    |
 | 7    | 5    | 8    |
 
-and after providing the input, you will be prompter to provide goal state, which for this case ideally would be
+and after providing the input, you will be prompted to provide the goal state, which for this case ideally would be
 
 |      |      |      |
 |------|------|------|
@@ -60,53 +60,44 @@ and after providing the input, you will be prompter to provide goal state, which
 | 4    | 5    | 6    |
 | 7    | 8    | _    |
 
-The A* algorithm uses a combination of the actual cost to reach a node (g) and a heuristic estimate of the remaining cost to the goal (h). 
+The A* algorithm combines the actual cost to reach a node (g) and a heuristic estimate of the remaining cost to the goal (h). 
 
 The total cost (f) is given by:
 <br> f(x) = g(x) + h(x)
 
 In the context of the 8-Puzzle, the heuristic function 'h(x)' calculates the number of misplaced tiles between the current state and the goal state.
 
-Here is an representation for working of A* Algo on numbered puzzle:
-![A* Pathfinding Algorithm Visualization](resources/A-star%20working.jpg "A* Algorithm in Action")
+Here is a representation for the working of A* Algo on the numbered puzzle:
 
-If you happen to select the image puzzle, you will be prompted to provide the path of the image. You can create jumbled image puzzle by providing sequence.
+<img src="resources/A-star%20working.jpg" width="50%" height="50%"/>
 
-For eg:
-Input image:
-![Dog](resources/image.jpeg "Dog")
-
-Jumbled image using user input:
-![Dog](resources/grid_intial.jpg "Jumbled State")
-
-Algo will solve for goal state:
-![Dog](resources/grid_goal.jpg "Goal State")
-
+If you select the image puzzle, you will be prompted to provide the path of the image. You can create a jumbled image puzzle by providing a sequence. And by mapping grid to numbers, image problem again becomes a number problem. Below is the eg of Image Puzzle.
 
 ## Results
-<div style="display: flex; flex-direction: row; justify-content: center; gap: 30px;">
-    <img src="resources/input.png" alt="Jumbled Image" title="Initial Image" width="45%"/>
-    <img src="resources/jumbled.png" alt="Jumbled Image" title="Jumbled Image" width="45%"/>
+Input & Jumbled Image
+
+<div style="display: flex; flex-direction: row; gap: 30px;">
+    <img src="resources/input.png" alt="Jumbled Image" title="Initial Image" width="30%" height="30%"/>
+    <img src="resources/jumbled.png" alt="Jumbled Image" title="Jumbled Image" width="30%" height="30%"/>
 </div>
-<p align="center">Input & Jumbled Image</p>
 
 **Solving:**
-<div style="display: flex; flex-direction: row; justify-content: center; gap: 20px;">
-  <img src="resources/step1.png" alt="Step 1" width="75%" height="50"/>
-  <img src="resources/step1_.png" alt="Step 1 continued" width="40%"/>
-</div>
-<p align="center"><em>Step 1</em></p>
 
-<div style="display: flex; flex-direction: row; justify-content: center; gap: 20px;">
-  <img src="resources/step2.png" alt="Step 2" width="70%" height="50"/>
-  <img src="resources/step2_.png" alt="Step 2 continued" width="40%"/>
-</div>
-<p align="center"><em>Step 2</em></p>
+Stage1:
 
-<div style="display: flex; flex-direction: row; justify-content: center; gap: 20px;">
-  <img src="resources/step3.png" alt="Step 3" width="70%" height="50"/>
-  <img src="resources/step3_.png" alt="Step 3 continued" width="40%"/>
-</div>
-<p align="center"><em>Step 3</em></p>
+<img src="resources/step1.png" alt="Step 1" height="40%" width="40%"/>
+<img src="resources/step1_.png" alt="Step 1 continued" width="30%" height="30%"/>
 
-<img src="resources/step4.png" alt="Final"/>
+Stage2:
+
+<img src="resources/step2.png" alt="Step 1" height="30%" width="30%"/>
+<img src="resources/step2_.png" alt="Step 1 continued" width="30%" height="30%"/>
+
+Stage3:
+
+<img src="resources/step3.png" alt="Step 1" height="30%" width="30%"/>
+<img src="resources/step3_.png" alt="Step 1 continued" width="30%" height="30%"/>
+
+Final:
+
+<img src="resources/step4.png" alt="Final" width="30%" height="30%"/>
