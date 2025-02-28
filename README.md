@@ -1,6 +1,6 @@
 # Puzzle Solver using Informed AI - A* Algorithm
 
-This repository contains an implementation of the A* algorithm applied to solve the classic 8-Puzzle problem. The A* algorithm is an informed search algorithm that intelligently explores the search space by combining the cost to reach the current state and a heuristic estimate of the remaining cost to the goal state.
+This project contains an implementation of the A* algorithm applied to solve the classic 8-Puzzle problem. 
 
 ## Features
 <ul>
@@ -11,7 +11,6 @@ This repository contains an implementation of the A* algorithm applied to solve 
 <li><b>Visual Representation:</b> Visualize the steps taken to solve image-based puzzles, with an option to save the intermediate results.
 </ul>
 
-## Getting Started
 
 ### Pre-requisites
 <ul>
@@ -43,29 +42,48 @@ Run the 'main.py' file:
 ```bash
 python main.py
 ```
-Follow the on-screen instructions
+Select Between Numbered Sliding Puzzle and Sliding Puzzle from an Image. 
 
-## A* Algorithm
-The A* algorithm uses a combination of the actual cost to reach a node (g) and a heuristic estimate of the remaining cost to the goal (h). The total cost (f) is given by:
+If you chose numbered sliding puzzle, you can input a randomized sequence of number for 8-Puzzle. 
+For eg.
+|      |      |      |
+|------|------|------|
+| 1    | 2    | 3    |
+| _    | 4    | 6    |
+| 7    | 5    | 8    |
+
+and after providing the input, you will be prompter to provide goal state, which for this case ideally would be
+
+|      |      |      |
+|------|------|------|
+| 1    | 2    | 3    |
+| 4    | 5    | 6    |
+| 7    | 8    | _    |
+
+The A* algorithm uses a combination of the actual cost to reach a node (g) and a heuristic estimate of the remaining cost to the goal (h). 
+
+The total cost (f) is given by:
 <br> f(x) = g(x) + h(x)
-<br>In the context of the 8-Puzzle, the heuristic function 'h(x)' calculates the number of misplaced tiles between the current state and the goal state.
+
+In the context of the 8-Puzzle, the heuristic function 'h(x)' calculates the number of misplaced tiles between the current state and the goal state.
+
+Here is an representation for working of A* Algo on numbered puzzle:
+![A* Pathfinding Algorithm Visualization](resources/A-star%20working.jpg "A* Algorithm in Action")
+
+If you happen to select the image puzzle, you will be prompted to provide the path of the image. You can create jumbled image puzzle by providing sequence.
+
+For eg:
+Input image:
+![Dog](resources/image.jpeg "Dog")
+
+Jumbled image using user input:
+![Dog](resources/grid_intial.jpg "Jumbled State")
+
+Algo will solve for goal state:
+![Dog](resources/grid_goal.jpg "Goal State")
+
 
 ## Results
 
-#### Step 0 - Inital Stage<br>
-
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/1.JPG" width="75%" height="75%">
-
-#### Step 1<br>
-
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/2.JPG" width="75%" height="75%">
-
-#### Step 2<br>
-
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/3.JPG" width="75%" height="75%">
-
-<be>
-<br>
-<img src="https://github.com/jayant1211/8-puzzle-Image-Number/blob/main/Results/res.JPG" width="75%" height="75%">
 
 
