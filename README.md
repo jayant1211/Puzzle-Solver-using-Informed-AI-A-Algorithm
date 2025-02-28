@@ -84,6 +84,29 @@ Algo will solve for goal state:
 
 
 ## Results
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 30px;">
+    <img src="resources/input.png" alt="Jumbled Image" title="Initial Image" width="45%"/>
+    <img src="resources/jumbled.png" alt="Jumbled Image" title="Jumbled Image" width="45%"/>
+</div>
+<p align="center">Input & Jumbled Image</p>
 
+**Solving:**
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 20px;">
+  <img src="resources/step1.png" alt="Step 1" width="75%" height="50"/>
+  <img src="resources/step1_.png" alt="Step 1 continued" width="40%"/>
+</div>
+<p align="center"><em>Step 1</em></p>
 
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 20px;">
+  <img src="resources/step2.png" alt="Step 2" width="70%" height="50"/>
+  <img src="resources/step2_.png" alt="Step 2 continued" width="40%"/>
+</div>
+<p align="center"><em>Step 2</em></p>
 
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 20px;">
+  <img src="resources/step3.png" alt="Step 3" width="70%" height="50"/>
+  <img src="resources/step3_.png" alt="Step 3 continued" width="40%"/>
+</div>
+<p align="center"><em>Step 3</em></p>
+
+<img src="resources/step4.png" alt="Final"/>
